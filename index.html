@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Encryter/Decrypter</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"> </script>
+</head>
+
+<body>
+    <h1 class="centered" id="page-title">Life is a mystery</h1>
+    <div class="user-key"> <textarea
+            placeholder="Enter your key here. You will need it afterwards for decrypting the message."
+            id="userKey"></textarea></div>
+    <div class="both-boxes">
+        <div class="column">
+            <div class="tooltip">
+                <button class="bordered button" onclick="copyDecryptedText()" onmouseout="outFunc('myTooltipEncrypt')">
+                    <span class="tooltiptext" id="myTooltipEncrypt">Copy to clipboard</span>Copy decrypted text</button>
+            </div>
+            <textarea
+                placeholder="Enter your secret message here and we will encrypt it so you can keep it safe from your enemy!"
+                class="textarea bordered" id="plain-text"></textarea>
+            <input class="bordered button" type="button" value="Encrypt" onclick="encrypt()">
+        </div>
+
+        <div class="column">
+            <div class="tooltip">
+                <button class="bordered button" onclick="copyEncryptedText()" onmouseout="outFunc('myTooltipDecrypt')">
+                    <span class="tooltiptext" id="myTooltipDecrypt">Copy to clipboard</span>Copy encrypted text</button>
+            </div>
+            <textarea placeholder="Enter your encrypted message here and we will solve the mistery!"
+                class="textarea bordered" id="encrypted-text"></textarea>
+            <input class="bordered button" type="button" value="Decrypt" onclick="decrypt()">
+        </div>
+
+        <div id="footer">
+            <p id="version">version 2.0</p>
+        </div>
+</body>
+
+</html>
