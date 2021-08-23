@@ -22,7 +22,7 @@ body {
     width          : 100%;
     display        : flex;
     justify-content: center;
-    margin         : 16px
+    margin         : 16px 3px;
 }
 
 #userKey {
