@@ -112,9 +112,17 @@ body {
     opacity   : 1;
 }
 
+/* @media only screen and (max-width: 900px) { */
+
 #footer {
-    position: absolute;
-    bottom  : 0;
-    right   : 0;
+    /* position: bottom 0px right 0px; */
+    position: fixed;
+    bottom  : 0px;
+    right   : 0px;
+}
+
+#version {
+    background-color: rgba(0, 0, 0, 0.315);
+    color           : azure;
 
 }
